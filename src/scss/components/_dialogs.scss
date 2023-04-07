@@ -1,0 +1,41 @@
+.add-project-dialog {
+
+  .add-project-dialog-label {
+    width: 80px;
+  }
+
+  .add-project-dialog-input {
+    margin: 4px;
+    width: 100%;
+  }
+
+}
+
+.command-dialog {
+  padding: 8px;
+
+  .wrapper {
+    margin-bottom: 12px
+  }
+  .item{
+    @extend .flex-between;
+  }
+  .options-item{
+    @extend .flex-between;
+    align-items: start !important;
+  }
+}
+
+.required{
+  color: red;
+}
+
+.create-script-dialog {
+  .create-script-label {
+    width: 120px;
+  }
+  .create-script-input {
+    margin: 4px;
+    width: 100%;
+  }
+}

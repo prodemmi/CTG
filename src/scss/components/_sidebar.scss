@@ -1,0 +1,36 @@
+.project-sidebar {
+  min-width: 260px;
+  max-width: 40%;
+  background-color: #393e46;
+
+  .header {
+    display: flex;
+    padding: 8px;
+  }
+
+  .sidebar-item {
+    img {
+      width: 22px;
+      padding: 0 8px;
+    }
+
+    name {
+      width: 100%;
+    }
+  }
+}
+
+.icon-button {
+  @extend .flex-center;
+  width: 16px;
+  height: 16px;
+  padding: 4px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: .7rem;
+
+  &:hover {
+    background-color: #1e1e1e;
+  }
+}

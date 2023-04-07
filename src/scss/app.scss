@@ -1,0 +1,85 @@
+@import 'remixicon/fonts/remixicon.css';
+@import "./views/main_view.scss";
+@import "./views/setting_view.scss";
+@import "./pages/project_page.scss";
+@import "./pages/welcome_page.scss";
+@import "./components/about.scss";
+@import "./components/cli.scss";
+@import "./components/dialogs.scss";
+@import "./components/frameworks.scss";
+@import "./components/script.scss";
+@import "./components/sidebar.scss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+}
+
+.selectable, .selectable > * {
+  -moz-user-select: text !important;
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -webkit-user-drag: auto !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mx-2 {
+  margin: 0 6px;
+}
+
+.my-2 {
+  margin: 6px 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+#app {
+  overflow: hidden;
+}
+
+.align-center {
+  display: flex !important;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.el-menu-item {
+  margin: 0 !important;
+  padding: 4px 8px !important;
+}
+
+.el-menu-item * {
+  vertical-align: middle !important;
+}
+
+.el-divider--horizontal {
+  margin: 0 !important;
+}

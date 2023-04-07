@@ -1,0 +1,45 @@
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+  overflow: auto;
+
+  .welcome-page-banner {
+    width: 30%;
+    max-width: 600px;
+    margin-bottom: 32px;
+    object-fit: cover;
+    filter: invert(100%);
+  }
+
+  .welcome-page-content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: auto;
+    padding-left: 42px;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .welcome-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+
+    img {
+      margin-right: 12px;
+    }
+
+    &:hover {
+      background-color: azure;
+    }
+  }
+
+}
