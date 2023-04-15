@@ -6,6 +6,9 @@ import open from "./open"
 import project from "./project"
 import script from "./script"
 
+import migrations from "./laravel/migrations"
+import tinker from "./laravel/tinker"
+
 export default {
     ...project,
     ...open,
@@ -13,5 +16,7 @@ export default {
     ...store,
     ...cli,
     ...file,
-    ...script
+    ...script,
+    ...migrations,
+    ...tinker
 }

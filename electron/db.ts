@@ -92,13 +92,19 @@ class DatabaseManager {
 
     addScript(projectId: Number, name: string, description: string, command: string){
 
-        this.query('INSERT INTO projects (project_id, name, description, command) VALUES (?, ?, ? , ?)', [projectId, name, description , command])
+        this.query('INSERT INTO scripts (project_id, name, description, command) VALUES (?, ?, ? , ?)', [projectId, name, description , command])
 
     }
 
     deleteProject(projectId: Number){
 
         this.query(`DELETE FROM projects WHERE id = ${projectId}`)
+
+    }
+
+    deleteScript(scriptId: Number){
+
+        this.query(`DELETE FROM scripts WHERE id = ${scriptId}`)
 
     }
 

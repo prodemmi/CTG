@@ -1,1 +1,18 @@
 .script {}
+
+.script-item {
+}
+
+.script-item-command {
+    margin: 12px;
+}
+
+.script-item-description {
+    margin: 12px;
+}
+
+.script-item-button {
+    @extend.my-4;
+    float: right;
+    margin-right: 12px;
+}

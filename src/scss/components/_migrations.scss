@@ -1,0 +1,8 @@
+.migration {
+
+}
+
+.migration-row {
+    @extend .flex-between;
+    @extend .my-2;
+}

@@ -23,8 +23,5 @@ You could import some projects and manage them.
 - [ ] Other frameworks
 
 ### Other
-- [ ] Ability to create custom scripts for every projects
+- [x] Ability to create custom scripts for every projects
 - [ ] Ability to connect to remote workspaces
- 
-# To do
-- Laravel ([Php Artisan](https://laravel.com/docs/10.x/artisan)) :construction:

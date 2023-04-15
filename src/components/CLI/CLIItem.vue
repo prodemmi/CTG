@@ -1,11 +1,9 @@
 <script lang="ts" setup>
 import {Project} from "@/types"
 import {PropType, ref} from "vue"
-import {useAppStore} from "@/src/store/app"
 import {Eleme} from '@element-plus/icons-vue'
 import {ipcRenderer} from "electron";
 
-const store = useAppStore()
 const loading = ref(false)
 
 const props = defineProps({

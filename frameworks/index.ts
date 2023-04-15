@@ -1,11 +1,13 @@
 export * from "./utils"
 import laravel from "./laravel"
+// import django from "./django"
 import no_framework from "./no_framework"
 import { Framework } from "../types"
 
 export const frameworks: typeof Framework[] = [
     no_framework,
-    laravel
+    laravel,
+    // django
 ]
 
     // 'lumen',

@@ -5,6 +5,7 @@ import { nestedKeyExists, run } from "./utils"
 import { BrowserWindow } from 'electron'
 import { exec, execSync } from 'child_process'
 import { Framework } from "../types"
+import { reformatCommand } from "../utils/command"
 
 const exclude_commands = ['tinker', 'help']
 const pined_commands = ['serve', 'migrate', 'optimize', 'test', 'up', 'down']
@@ -53,24 +54,6 @@ const composer_json_exists = (path: string) => {
     }
 
     return false
-
-}
-
-const reformatCommand = (path: string, prefix: string, command: string, bindings: [], assigner = '=') => {
-
-    let optionText = ''
-
-    const args = _.values(bindings.arguments).join(",")
-    const opts = _.map(bindings.options, (value, option) => {
-
-        if (_.isBoolean(value) && value === true)
-            optionText += option + ' '
-        else if (!_.isBoolean(value))
-            optionText += option + assigner + value + ' '
-
-    })
-
-    return `cd ${path};${prefix} ${command} ${args} ${optionText}`
 
 }
 

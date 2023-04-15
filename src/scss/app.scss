@@ -9,6 +9,7 @@
 @import "./components/frameworks.scss";
 @import "./components/script.scss";
 @import "./components/sidebar.scss";
+@import "./components/migrations";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -37,12 +38,24 @@ body {
   overflow: hidden;
 }
 
+.m-2 {
+  margin: 6px;
+}
+
+.m-4 {
+  margin: 12px;
+}
+
 .mx-2 {
   margin: 0 6px;
 }
 
 .my-2 {
   margin: 6px 0;
+}
+
+.my-4 {
+  margin: 12px 0;
 }
 
 .w-full {

@@ -36,7 +36,6 @@ onMounted(async () => {
   initialData.value = data.value
 
   store.$subscribe(async (mutation, state) => {
-    console.log(mutation);
 
     const key = mutation.events.key
     const search = _.lowerCase(state.search)
@@ -101,7 +100,7 @@ onMounted(async () => {
     </div>
     <div v-else>
       <CLIItem v-for="command in data"
-               :key="cmd"
+               :key="command"
                :cmd="command"
                :project="project"
                class="flex-between"

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import {ipcRenderer} from "electron"
-import {onMounted, ref} from "vue"
+import {computed, onMounted, ref} from "vue"
 import Sidebar from "@/src/components/Sidebar/Sidebar.vue"
 import WelcomePage from "@/src/pages/WelcomePage.vue"
 import ProjectPage from "@/src/pages/ProjectPage.vue"
@@ -16,12 +16,10 @@ const updateSidebarItems = async () => listProjects.value = await ipcRenderer.in
 
 onMounted(async () => {
 
-  updateSidebarItems()
+  await updateSidebarItems()
 
   ipcRenderer.on('UPDATE_PROJECTS', async (event) => updateSidebarItems())
-
   ipcRenderer.on('SHOW_LOADING', async (event, message) => showLoading.value = message)
-
   ipcRenderer.on('HIDE_LOADING', async (event) => showLoading.value = false)
 
 })

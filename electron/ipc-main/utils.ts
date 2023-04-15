@@ -31,6 +31,7 @@ export const showCLILoading = (win: BrowserWindow, message: string) => {
 export const showError = (win: BrowserWindow, message: string) => win.webContents.send("ERROR", message)
 
 export const updateProjects = (win: BrowserWindow) => win.webContents.send('UPDATE_PROJECTS')
+export const updateScripts = (win: BrowserWindow) => win.webContents.send('UPDATE_SCRIPTS')
 
 export const showToast = (win: BrowserWindow, message: string, type: any = 'success', options: Object = {}) => win.webContents.send("TOAST", message, type, options)
 
