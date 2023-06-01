@@ -42,7 +42,7 @@
     "element-plus": "^2.3.1",
     "lodash": "^4.17.21",
     "pinia": "^2.0.33",
-    "remixicon": "^2.5.0",
+    "remixicon": "^3.3.0",
     "sqlite3": "^5.1.6"
   }
 }
