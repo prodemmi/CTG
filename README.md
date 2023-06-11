@@ -9,6 +9,9 @@ You could import some projects and manage them.
 - [Element Plus](https://element-plus.org/)
 - [Remix Icon](https://remixicon.com/)
 
+## Workspace screenshot
+![screenshot](./src/assets/images/screenshot.png)
+
 # Coming Features
 ### Backend Frameworks
 - [x] Laravel ([Php Artisan](https://laravel.com/docs/10.x/artisan))
